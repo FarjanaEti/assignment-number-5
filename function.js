@@ -1,6 +1,6 @@
 function clickMyDonation(id){
    const input=document.getElementById(id).value;
-    //const inputNumber=parseFloat(input)
+   // const inputNumber=parseFloat(input)
    return input;                          
 } 
 
