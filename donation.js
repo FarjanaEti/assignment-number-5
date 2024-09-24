@@ -77,6 +77,12 @@ newHistory.innerHTML=`
 const historyContainer=document.getElementById('new-donation');
 historyContainer.insertBefore(newHistory, historyContainer.firstChild)
 })
+
+// blog page 
+document.getElementById('index').addEventListener('click',function(){
+       window.location.href="./blog.html"                       
+});
+
 //third card
 document.getElementById('donation-btn-3')
 .addEventListener('click',function(event){
