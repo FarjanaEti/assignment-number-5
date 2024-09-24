@@ -26,7 +26,7 @@ document.getElementById('donation-btn')
 
        //   history list
 let newHistory=document.createElement('div');
-newHistory.className='border p-4 rounded bg-orange-200'
+newHistory.className='border p-4 rounded bg-pink-200'
 newHistory.innerHTML=`
       
       <p class="text-xl font-bold">${fieldValues}  Taka is Donated for famine-2024 at NOakhali, Bangladesh</p>
@@ -67,7 +67,7 @@ document.getElementById('donation-btn-2')
        
        //   history list
 let newHistory=document.createElement('div');
-newHistory.className='border p-4 rounded bg-orange-200'
+newHistory.className='border p-4 rounded bg-pink-200'
 newHistory.innerHTML=`
       
       <p class="text-xl font-bold">${fieldValues2}  Taka is Donated for famine-2024 at feni, Bangladesh</p>
@@ -113,7 +113,7 @@ document.getElementById('donation-btn-3')
        
        //   history list
 let newHistory=document.createElement('div');
-newHistory.className='border p-4 rounded bg-orange-200'
+newHistory.className='border p-4 rounded bg-pink-200'
 newHistory.innerHTML=`
       
       <p class="text-xl font-bold">${fieldValues3} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</p>
@@ -137,18 +137,3 @@ const his= document.getElementById('btn-h')
        his.classList.add('text-black','bg-lime-300')  
        don.classList.remove("bg-lime-300")                   
   });
-
-// //   history list
-
-//   //const gf=document.getElementById('input-field').value;
-//   //console.log(gf)
-// let newHistory=document.createElement('div');
-// newHistory.className='border p-4 rounded bg-orange-200'
-// newHistory.innerHTML=`
-      
-//       <p class="text-xl font-bold">${gf}Donation from feni</p>
-//       <p class="text-xl font-bold">${new Date()}</p>
-
-// `;
-// const historyContainer=document.getElementById('new-donation');
-// historyContainer.insertBefore(newHistory, historyContainer.firstChild)
