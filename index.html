@@ -43,13 +43,14 @@
   <!-- nav ends here -->
    <!-- two button start here -->
     <div class="text-center bg-pink-100 p-4 space-x-5 container  sticky top-[136px] backdrop-filter backdrop-blur-lg bg-opacity-30 mx-auto">
-       <button class="btn-sm bg-color rounded-lg">Donation</button>                       
-       <button class="bt-sm border rounded-lg py-1 px-4">History</button>                                             
+       <button id="btn-d" class="btn-sm btn bg-lime-300 rounded-lg">Donation</button>                       
+       <button id="btn-h" class="btn-sm btn   rounded-lg ">History</button>                                             
     </div>
   
   <main class="container mx-auto ">
    <!-- 3 card start here -->
-    <section class=" font-Lexend container mx-auto xl:p-20 lg:p-10 p-10">
+    
+    <section id="donation" class=" font-Lexend container mx-auto xl:p-20 lg:p-10 p-10">
       <!-- card 1 -->
      <div class="lg:flex  justify-between border rounded-lg xl:p-10 lg:p-5 p-5 gap-5">
      <div class="lg:w-1/2 border ">
@@ -160,11 +161,18 @@
      </div>   
 </div>
     </section>
+    <!-- history -->
+    <div class="hidden" id="history-list">
+      <h1 class="text-3xl text-center">History List</h1> 
+      <div id="new-donation">
+
+      </div>            
+ </div>
    <!-- 3 card ends here -->
   </main>  
 <!-- js link -->
  <script src="/donation.js"></script>
  <script src="/function.js"></script>
- 
+ <script src="/button.js"></script>
 </body>
 </html>

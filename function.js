@@ -1,7 +1,7 @@
 function clickMyDonation(id){
    const input=document.getElementById(id).value;
-   const inputNumber=parseFloat(input)
-   return inputNumber;                          
+    //const inputNumber=parseFloat(input)
+   return input;                          
 } 
 
 function addedMyDonation(id){
@@ -9,3 +9,9 @@ function addedMyDonation(id){
    const moneyNumber=parseFloat(myMoney)
    return moneyNumber;                          
 }
+
+function hiddenAndShow(id){
+   document.getElementById('donation').classList.add('hidden')
+   document.getElementById('history-list').classList.add('hidden')
+  
+  document.getElementById(id).classList.remove('hidden')}
