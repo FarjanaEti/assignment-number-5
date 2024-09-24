@@ -2,24 +2,25 @@ document.getElementById('donation-btn')
 .addEventListener('click',function(event){
   event.preventDefault();
   const fieldValues=clickMyDonation('input-field')
+  const accountMoney=addedMyDonation('account-money')
+ 
  //console.log(fieldValues)
     
-  if(isNaN(fieldValues) || fieldValues <=0 || parseFloat(fieldValues) === NaN ){
+  if(isNaN(fieldValues) || fieldValues <=0 || parseFloat(fieldValues) === NaN 
+  || accountMoney<fieldValues || fieldValues === null){
         alert('failed to add') 
         return;                     
     }
     
    else if(fieldValues>0){
     const fieldValue=parseFloat(fieldValues)
-    //console.log(fieldValue)
-      const addMoney=addedMyDonation('money')
-      //console.log(addMoney)
+    const addMoney=addedMyDonation('money')
         const afterdonate=fieldValue+addMoney;
         document.getElementById('money').innerText=afterdonate;  
                               
     }
     
-    const accountMoney=addedMyDonation('account-money')
+    
     const afterWithdraw=accountMoney-fieldValues;
        document.getElementById('account-money').innerText=afterWithdraw;
        document.getElementById('my_modal_4').showModal();
@@ -42,24 +43,23 @@ document.getElementById('donation-btn-2')
 .addEventListener('click',function(event){
   event.preventDefault();
   const fieldValues2=clickMyDonation('input-field-2')
+  const accountMoney=addedMyDonation('account-money')
  //console.log(fieldValues2)
     
-  if(isNaN(fieldValues2) || fieldValues2<=0 || parseFloat(fieldValues2) === NaN ){
+  if(isNaN(fieldValues2) || fieldValues2<=0 || parseFloat(fieldValues2) === NaN 
+   || accountMoney<fieldValues2 || fieldValues2 === null){
         alert('failed to add') 
         return;                     
     }
     
    else if(fieldValues2>0){
     const fieldValue2=parseFloat(fieldValues2)
-   // console.log(fieldValue2)
       const addMoney=addedMyDonation('money-2')
-      //console.log(addMoney)
         const afterdonate=fieldValue2+addMoney;
         document.getElementById('money-2').innerText=afterdonate;  
                               
     }
     
-    const accountMoney=addedMyDonation('account-money')
     const afterWithdraw=accountMoney-fieldValues2;
        document.getElementById('account-money').innerText=afterWithdraw;
        document.getElementById('my_modal_4').showModal();
@@ -88,9 +88,11 @@ document.getElementById('donation-btn-3')
 .addEventListener('click',function(event){
   event.preventDefault();
   const fieldValues3=clickMyDonation('input-field-3')
+  const accountMoney=addedMyDonation('account-money')
  //console.log(fieldValues2)
     
-  if(isNaN(fieldValues3) || fieldValues3<=0 || parseFloat(fieldValues3) === NaN ){
+  if(isNaN(fieldValues3) || fieldValues3<=0 || parseFloat(fieldValues3) === NaN 
+  || accountMoney<fieldValues3 || fieldValues3 === null){
         alert('failed to add') 
         return;                     
     }
@@ -105,7 +107,6 @@ document.getElementById('donation-btn-3')
                               
     }
     
-    const accountMoney=addedMyDonation('account-money')
     const afterWithdraw=accountMoney-fieldValues3;
        document.getElementById('account-money').innerText=afterWithdraw;
        document.getElementById('my_modal_4').showModal();
